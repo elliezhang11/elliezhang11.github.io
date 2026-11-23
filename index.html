@@ -7,6 +7,13 @@
   <meta name="theme-color" content="#f5f5ef">
   <title>Xiaoyue Zhang | Research Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    .hero .intro { align-self: center; }
+    .hero-profile { display: grid; gap: .75rem; min-width: 0; }
+    .profile-photo { display: block; width: 100%; height: auto; border-radius: .5rem; }
+    .hero-profile .focus { min-height: 0; padding: clamp(1.25rem, 3vw, 2rem); }
+    .hero-profile .focus p { font-size: clamp(1.4rem, 2.5vw, 2rem); }
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -21,7 +28,6 @@
   <main class="wrap" id="main">
     <section class="hero" aria-labelledby="name">
       <div class="intro">
-        <p class="eyebrow">Research portfolio</p>
         <h1 id="name">Xiaoyue<br>Zhang<span>.</span></h1>
         <p class="intro-copy">My research focuses on corporate finance, information disclosure, and the platform economy. I combine data science and econometrics to study patterns in text and visual data.</p>
         <div class="actions">
@@ -29,12 +35,15 @@
           <a class="button secondary" href="mailto:xiaoyue.zhang20@outlook.com">Email me</a>
         </div>
       </div>
-      <aside class="focus" aria-labelledby="focus-title">
-        <div class="focus-text">
-          <h2 id="focus-title">Research interests</h2>
-          <p>Corporate finance<br>Information disclosure<br>Platform Economy<br>Generative AI</p>
-        </div>
-      </aside>
+      <div class="hero-profile">
+        <img class="profile-photo" src="./xiaoyue-zhang.jpg" width="1440" height="958" alt="Xiaoyue Zhang speaking at a podium">
+        <aside class="focus" aria-labelledby="focus-title">
+          <div class="focus-text">
+            <h2 id="focus-title">Research interests</h2>
+            <p>Corporate finance<br>Information disclosure<br>Platform Economy<br>Generative AI</p>
+          </div>
+        </aside>
+      </div>
     </section>
 
     <section class="section" id="research" aria-labelledby="papers-title">
