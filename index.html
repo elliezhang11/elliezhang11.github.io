@@ -10,7 +10,8 @@
   <style>
     .hero .intro { align-self: center; }
     .hero-profile { display: grid; gap: .75rem; min-width: 0; }
-    .profile-photo { display: block; width: 100%; height: auto; border-radius: .5rem; }
+    .profile-photo-frame { width: 76%; margin-inline: auto; overflow: hidden; border-radius: .5rem; }
+    .profile-photo { display: block; width: 100%; height: auto; transform: scale(1.45); transform-origin: 55% 57%; }
     .hero-profile .focus { min-height: 0; padding: clamp(1.25rem, 3vw, 2rem); }
     .hero-profile .focus p { font-size: clamp(1.4rem, 2.5vw, 2rem); }
   </style>
@@ -36,7 +37,9 @@
         </div>
       </div>
       <div class="hero-profile">
-        <img class="profile-photo" src="./xiaoyue-zhang.jpg" width="1440" height="958" alt="Xiaoyue Zhang speaking at a podium">
+        <div class="profile-photo-frame">
+          <img class="profile-photo" src="./xiaoyue-zhang.jpg" width="1440" height="958" alt="Xiaoyue Zhang speaking at a podium">
+        </div>
         <aside class="focus" aria-labelledby="focus-title">
           <div class="focus-text">
             <h2 id="focus-title">Research interests</h2>
